@@ -1,10 +1,10 @@
-package pl.kinast.appvideo;
+package pl.kinast.apphobby;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class AppVideoApplicationTests {
+class HobbyApplicationTests {
 
     @Test
     void contextLoads() {

@@ -1,15 +1,12 @@
-package pl.kinast.appvideo.dao.entity;
-
-import org.springframework.web.bind.annotation.GetMapping;
+package pl.kinast.apphobby.dao.entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import java.time.LocalDate;
 
 @Entity
-public class VideoCassette {
+public class Hobby {
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
@@ -17,15 +14,12 @@ public class VideoCassette {
 
     private String title;
 
-    private LocalDate productionYear;
-
-    public VideoCassette() {
+    public Hobby() {
     }
 
-    public VideoCassette(Long id, String title, LocalDate productionYear) {
+    public Hobby(Long id, String title) {
         this.id = id;
         this.title = title;
-        this.productionYear = productionYear;
     }
 
     public Long getId() {
@@ -44,11 +38,4 @@ public class VideoCassette {
         this.title = title;
     }
 
-    public LocalDate getProductionYear() {
-        return productionYear;
-    }
-
-    public void setProductionYear(LocalDate productionYear) {
-        this.productionYear = productionYear;
-    }
 }
